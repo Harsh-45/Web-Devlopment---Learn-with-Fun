@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+/* Code for Slider starts here */
+.Imgslider {
+    display: grid;
+    place-items: center;
+}
+.imgContainer {
+    margin: auto;
+    width: 99.8%;
+    height: 90vh;
+    background-image: url('../images/main.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation: changeImage 50s step-end infinite;
+}
+@keyframes changeImage {
+    0%{
+        background-image: url('../images/main.jpg');
+    }
+    10%{
+        background-image: url('../images/airPol.jpg');
+    }
+    20%{
+        background-image: url('../images/waterPol.jpg');
+    }
+    30%{
+        background-image: url('../images/soilPol.jpg');
+    }
+    40%{
+        background-image: url('../images/solarE.jpg');
+    }
+    50%{
+        background-image: url('../images/windE.jpeg');
+    }
+    60%{
+        background-image: url('../images/biomassE.jpg');
+    }
+    70%{
+        background-image: url('../images/wasteSeg.jpg');
+    }
+    80%{
+        background-image: url('../images/reduce-reuse-recycle.jpg');
+    }
+    90%{
+        background-image: url('../images/sdg.png');
+    }
+}
+/* Code for Slider ends here */
+
+.mainContainer{
+    width: 55vw;
+    background-color: #d0e8e7;
+    margin: 3rem auto;
+    padding: 3rem;
+    padding-top: 1.6rem;
+    border-radius: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.mainContainer h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #004b45;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.mainContainer .content{
+    font-size: 1.1rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.8rem;
+}
+.mainContainer img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.component ul li{
+    font-style: oblique;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+.mainContainer .smallHead{
+    color: #002f2b;
+    font-size: 1.3rem;
+    /* font-weight: bolder; */
+    margin-bottom: 0.2rem;
+}
+/* Code for cards starts here */
+.container{
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding: 0 1rem;
+}
+.container .card{
+    background-color:white;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 1.2rem;
+}
+.container .card .box{
+    width: 100%;
+    padding: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+.container .card .box .content{
+    width: 100%;
+    text-align: center;
+}
+.container .card .box .content img{
+    width: 100%;
+    height: 12rem;
+}
+.container .card .box .content h2{
+    font-size: 1.6rem;
+    color: #004b45;
+    padding-bottom: 0.2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.container .card .box .content p{
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .card .box .content a{
+    display: inline-block;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+    background-color: #00857a;
+    color: white;
+    font-size: 1rem;
+}
+.container .card:hover .box{
+    transform: translateY(-3rem);
+    background-image: linear-gradient(to top, #0c9186, #259a90, #36a49a, #44ada5, #52b7af);
+    color: white;
+}
+.container .card:hover .box .content a{
+    background-color: white;
+    color: #00857a;
+}
+.container .card:hover .box .content h2{
+    color: white;
+}
+/* Code for cards ends here */
+@media only screen and (max-width: 520px){
+    
+}
+/* Code for cards ends here */

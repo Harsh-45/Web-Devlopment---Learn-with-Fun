@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-image: url(../images/greenbg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: white;
+    width: 55vw;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+    min-height: 60vh;
+    padding: 4rem 2rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: row;
+}
+.container .leftside{
+    width: 40%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+.container .leftside img{
+    width: 100%;
+    margin: auto;
+}
+.container .rightside{
+    width: 60%;
+}
+.rightside h1{
+    color: rgb(5, 155, 5);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.rightside h2{
+    color: rgb(5, 155, 5);
+    margin: 1rem auto 0.5rem;
+    font-size: 1.5rem;
+}
+.rightside ul{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    list-style-type: circle;
+    list-style-position: inside;
+    color: #243D25;
+}
+.rightside ul li{
+    margin-top: 0.3rem;
+}
+.rightside a{
+    background-color: rgb(5, 155, 5);
+    border: 2px solid rgb(5, 155, 5);
+    color: white;
+    border-radius: 10rem;
+    text-decoration: none;
+    margin-top: 2.5rem;
+    padding: 0.8rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    width: 80%;
+    font-size: 1.3rem;
+}
+.rightside a:hover{
+    color: rgb(5, 155, 5);
+    background-color: white;
+    border: 2px solid rgb(5, 155, 5);
+}
+@media screen and (max-width: 976px) {
+    :root{
+        font-size: 72.5%;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}

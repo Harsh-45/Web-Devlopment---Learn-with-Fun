@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: url('../images/greenbg.jpg');
+    background-color: #00b712;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    padding: 1.2rem 3rem;
+    padding-top: 0.8rem;
+    border-radius: 0.7rem;
+    background-color:  white;
+    width: 70vw;
+    align-self: center;
+    align-content: center;
+}
+.title {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.8rem;
+    font-size: 2.5rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #029c11;
+    text-align: center;
+    margin: 0 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8rem 0rem;
+}
+.scorebox, .timerbox{
+    padding: 1rem 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(5, 155, 5);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bolder;
+}
+.qbox {
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #029c11;
+    color: #029c11;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: bolder;
+}
+.questionbox{
+    background-color: #029c11;
+    margin-bottom: 2rem;
+    color: white;
+    border-radius: 0rem;
+    font-size: 1.7rem;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 1rem;
+    font-weight: bolder;
+}
+.optionsbox{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+.option{
+    display: flex;
+    font-size: 1.5rem;
+    border: 0.15rem solid rgb(2, 156, 17);
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+}
+.option:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(2,156,17,0.6);
+    transition: transform 150ms;
+    transform: scale(1.08);
+}
+.optno{
+    background-color: #029c11;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 0.85rem;
+}
+.opttext{
+    padding: 0.85rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: white;
+    border: 0;
+    background-color: #029c11;
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.optionsbox .option.right .opttext{
+    background-color: #34c943;
+    border-radius: 2rem;
+    color: white;
+}
+.optionsbox .option.wrong .opttext{
+    border-radius: 2rem;
+    background-color: rgb(249, 118, 95);
+    color: white;
+}
+@media screen and (max-width: 976px) {
+    :root{
+        font-size: 62.5%;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
